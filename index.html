@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>NotePad</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="notpad_name">
+                <span class="header_name header_name_first">Note</span><span class="header_name header_name_last">Pad</span>
+            </div>
+          
+            <div class="content__head">
+                <div class="input_title">
+                    <input id="input_title__inp" type="text" placeholder="Note title">
+                </div>
+                <div class="textarea_note">
+                    <textarea id="textarea_note_txt" name="" id="" cols="30" rows="10" placeholder="Write note..."></textarea>
+                </div>
+            </div>
+            <div class="select_color">
+                <div class="select_color_colors">
+                    <button value="pinc" class="select_color_pinc"><i class="select_color_btncheck1 fa-solid fa-check"></i></button>
+                    <button value="purple" class="select_color_purple"><i class="select_color_btncheck2 fa-solid fa-check"></i></button>
+                    <button value="blue" class="select_color_blue"><i class="select_color_btncheck3 fa-solid fa-check"></i></button>
+                    <button value="yellow" class="select_color_yellow"><i class="select_color_btncheck4 fa-solid fa-check"></i></button>
+                    <button value="green" class="select_color_green"><i class="select_color_btncheck5 fa-solid fa-check"></i></button>
+                </div>
+                <div class="select_color_button">
+                    <button id="select_color_button"><span>Save</span><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+            <div class="content__foot">
+                <input type="text" placeholder="Write to search..">
+                <i class=" fa-solid fa-magnifying-glass"></i>
+            </div>
+             <div class="cards">
+    
+                <!-- <div class="card">
+                    <div class="card_head">
+                        <h3>Salam</h3>
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                        
+                    </div>
+                    <div class="card_body">
+                        <p>asasasas</p>
+                    </div>
+                </div> -->
+               
+            </div> 
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

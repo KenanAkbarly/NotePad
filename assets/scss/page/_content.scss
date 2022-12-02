@@ -1,0 +1,284 @@
+body{
+    background: linear-gradient(45deg, #50eae4, #450f69);
+    height: 125vh;
+}
+.container{
+    width: $container_desktop;
+    margin: 0 auto;
+}
+.content{
+ text-align: center;
+ .notpad_name{
+    padding-top: 50px;
+ }
+    .content__head{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .header_name{
+        padding-bottom: 50px;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .header_name_first{
+        color:#50b4ea ;
+    }
+    .header_name_last{
+        color:#510f7d ;
+    }
+    .input_title{
+        input{
+            padding: 10px;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 30px;
+            border-radius:10px ;
+            border:1px solid #532abb;
+        }
+    }
+    .textarea_note{
+        textarea{
+            width: 100%;
+            border-radius:10px ;
+            border:1px solid #532abb;
+            padding:10px ;
+        }
+    }
+    .select_color{
+        text-align: center;
+       width: 100%;
+       padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        button{
+            border-radius: 50%;
+            gap: 15px;
+            width: 50px;
+            height: 50px;
+            border: none;
+          
+        }
+        .select_color_colors{
+            display: flex;
+            width: 100%;
+            gap: 15px;
+            padding-bottom: 20px;
+        }
+        .select_color_pinc{
+            background-color:#f06292 ;
+            transition:all 0.2s ease ;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .select_color_purple{
+            background-color:#ba68c8 ;
+            transition:all 0.2s ease ;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .select_color_blue{
+            background-color:#4fc3f7 ;
+            transition:all 0.2s ease ;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .select_color_yellow{
+            background-color:#ffd54f ;
+            transition:all 0.2s ease ;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .select_color_green{
+            background-color:#aed581 ;
+            transition:all 0.2s ease ;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .select_color_button{
+        display: flex;
+
+        button{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+            gap: 5px;
+            background-color:hsl(238, 41%, 51%) ;
+            border: none;
+            transition:all 0.2s ease ;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: hsl(238, 47%, 53%) ;
+                cursor: pointer;
+            }
+            span{
+                color: white;
+            }
+            display: flex;
+            i{
+                color:white;
+                width: 30px;
+            }
+        }
+    }
+    .content__foot{
+        text-align: center;
+        width: 500px;
+            height: 40px;
+            margin-bottom: 30px;
+            border-radius:10px ;
+            position: relative;
+        input{
+            padding: 10px;
+            width: 500px;
+            height: 40px;
+            margin-bottom: 30px;
+            border-radius:10px ;
+            border:1px solid #532abb;
+        }
+        i{
+            position: absolute;
+            right: 0;
+            top: o;
+            transform: translate(-70%,60%);
+        }
+    }
+   
+}
+
+.cards{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 230px;
+    height: 330px;
+    border: 2px dashed #aed581;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+   
+}
+.card_body{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.card_head{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color:#aed581 ;
+    width: 226px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    i{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    button{
+        border: none;
+        background-color: #aed581;
+    }
+   
+}
+
+.select_color_btncheck1{
+    display: none;
+    font-weight: 900;
+}
+.select_color_btncheck2{
+    display: none;
+    font-weight: 900;
+}
+.select_color_btncheck3{
+    display: none;
+    font-weight: 900;
+}
+.select_color_btncheck4{
+    display: none;
+    font-weight: 900;
+}
+.select_color_btncheck5{
+    display: none;
+    font-weight: 900;
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: $container_tablet;
+        margin: 0 auto !important;
+    }
+    .input_title{
+        input{
+            padding: 10px;
+            width: 280px;
+            height: 40px;
+            margin-bottom: 30px;
+            border-radius:10px ;
+            border:1px solid #532abb;
+        }
+    }
+    .select_color{ 
+        button{
+            
+            gap: 4px !important;
+            width: 30px !important;
+            height: 30px !important;
+
+          
+        }}
+        .select_color_colors{
+            width: 180px !important;
+            padding-bottom: 5px !important;
+        }
+        .content__head{
+            padding-top: 20px !important;
+            padding-bottom: 10px !important;
+        }
+        .select_color_button{
+            
+                button{
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+                    width: 80px !important;
+                    margin-left: 20px;
+                    height: 40px;
+                    border-radius: 10px;
+                    gap: 5px;
+                    background-color:hsl(238, 41%, 51%) ;
+                    border: none;
+                    transition:all 0.2s ease ;
+                    &:hover{
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        background-color: hsl(238, 47%, 53%) ;
+                        cursor: pointer;
+                    }
+            }
+        }
+        .content__foot{
+            width: 300px !important;
+            input{
+                width: 300px !important;
+            }
+        }
+}
